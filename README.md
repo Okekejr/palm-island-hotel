@@ -7,7 +7,7 @@ Hotel website project make with HTML, CSS and javacsript, showing modern concept
 ![](okhotel.gif)
 
 
-#### Live landing-page link
+#### Live link
 
 ```
 http://palm-island-hotel.vercel.app/
