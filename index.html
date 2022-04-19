@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OkeHotel</title>
+    <!-- stylesheet -->
+    <link href="styles.css" rel="stylesheet" />
+    <!-- javascript script -->
+    <script defer src="script.js"></script>
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&family=Sansita:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Booking Modal -->
+    <div class="modal-shadow hidden">
+      <div class="modal-container">
+        <div class="modal-contents">
+          <button class="btn--close-modal">&times;</button>
+          <p class="welcomeText">Book a wonderful experience with us.</p>
+          <p>Please fill in your the information and pick a date.</p>
+          <form class="subscribe">
+            <label id="email-label" for="email">Email address</label><br />
+            <input
+              type="text"
+              id="username"
+              placeholder="Enter your Email address"
+              class="usernameInput"
+              required
+            /><br /><br />
+            <label id="date-label" for="date">Select a date</label><br />
+            <input
+              type="date"
+              id="date"
+              placeholder="Date"
+              class="dateSelect"
+              required
+            />
+            <div class="message"></div>
+            <br />
+            <button class="bookBtn">BOOK</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar -->
+    <div class="header">
+      <nav class="nav">
+        <img src="Logo.svg" class="logo-img active" alt="OkeHotel logo" />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#our-resort">Our resort</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#dining-sec">Dining</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#spa-fitness">Spa</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#carousel">Testimonials</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#footer">Contacts</a>
+          </li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+      <!-- Homepage -->
+      <section id="home-paper">
+        <div class="home-content">
+          <h1>OkeResort</h1>
+          <p class="home-text">Hotel & Spa</p>
+          <a href="/" id="myButton">BOOK NOW</a>
+        </div>
+      </section>
+    </div>
+    <!-- Our resort information -->
+    <section class="section" id="our-resort">
+      <h2 class="header-resort">Our resort</h2>
+      <div class="contents">
+        <div class="resort-content">
+          <img class="resort-img imgs" src="island.svg" alt="resort island" />
+          <div class="resort-texts">
+            <h3 class="text1">The Okeke island</h3>
+            <p>
+              Located off the fabled Cambridge coastline, on a lush, private
+              island dotted with crushed seashell paths amid verdant tropical
+              foliage and exotic wildlife, rests The Okeke Island Resort & Spa -
+              a destination like no other.
+            </p>
+          </div>
+        </div>
+        <div class="resort-content1">
+          <img
+            class="resort-img imgs"
+            src="romantic-dinner.svg"
+            alt="romantic dinner"
+          />
+          <div class="resort-texts">
+            <h3 class="text1">Romantic Dinner</h3>
+            <p>
+              Immerse yourself in the peace and tranquillity setting, as you
+              take a dreamy romantic escapade through a one-of-a-kind
+              gastronomic journey with an intimate set dinner
+            </p>
+          </div>
+        </div>
+        <div class="resort-content2">
+          <img
+            class="resort-img imgs"
+            src="floating-basket.svg"
+            alt="floating basket"
+          />
+          <div class="resort-texts">
+            <h3 class="text1">Floating basket</h3>
+            <p>
+              All you have to do is slip into your swimwear to enjoy your
+              floating breakfast in a setting overlooking the breathtaking
+              beauty of The Okeke island landscape.
+            </p>
+          </div>
+        </div>
+        <div class="resort-content3">
+          <img
+            class="resort-img imgs"
+            src="moonlight-cinema.svg"
+            alt="moonlight cinema"
+          />
+          <div class="resort-texts">
+            <h3 class="text1">Moonlight cinemas</h3>
+            <p>
+              As the sun sets, be dazzled by the classic movies, brought to life
+              by our full-sized cinema screen; all to be enjoyed under the
+              spectacle of the clear, night sky.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Activities frame -->
+    <section id="activities-frame">
+      <div class="act-cont">
+        <a href="#home-paper" id="act-Btn">Activity & Adventure Guide</a>
+      </div>
+    </section>
+    <!-- Dining section -->
+    <section class="section" id="dining-sec">
+      <h2 class="header-resort">Dining</h2>
+      <div class="contents">
+        <div class="resort-content">
+          <div>
+            <img
+              class="resort-img imgs"
+              src="dinner-out.svg"
+              alt="romantic dinner outside"
+            />
+            <div class="resort-texts1">
+              <p>Romantic dinner out near the ocean</p>
+            </div>
+          </div>
+          <div class="room-dinner">
+            <img class="resort-img imgs" src="set-table.svg" alt="dinner in bed" />
+            <div class="resort-texts1">
+              <p>Room service dinner</p>
+            </div>
+          </div>
+        </div>
+        <div class="dining-content1">
+          <img
+            class="resort-img imgs"
+            src="dining-hall1.svg"
+            alt="dinner for conference/events"
+          />
+          <div class="resort-texts1">
+            <p>Event dinning & conferences</p>
+          </div>
+        </div>
+        <div class="dining-content2">
+          <img class="resort-img imgs" src="dining-hall2.svg" alt="outdoor dinner" />
+          <div class="resort-texts1">
+            <p>Outdoor dinner in the woods</p>
+          </div>
+        </div>
+        <div class="dining-content1">
+          <img class="resort-img imgs" src="chef.svg" alt="chef sub-profile" />
+          <div class="resort-texts">
+            <h3>Chef Daniel Robles</h3>
+            <p class="resort-texts1">Head Chef at OkeResort</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Events frame -->
+    <section id="events-frame">
+      <div class="act-cont">
+        <a href="#home-paper" id="act-Btn">Events booking</a>
+      </div>
+    </section>
+    <!-- Spa and fitness -->
+    <section class="section" id="spa-fitness">
+      <h2 class="header-resort">Spa & Fitness</h2>
+      <div class="contents">
+        <div class="resort-contents">
+          <img class="resort-img imgs" src="spa.svg" alt="Spa room" />
+          <div class="resort-texts1">
+            <p class="bold">Spa treatment</p>
+          </div>
+        </div>
+        <div class="resort-contents">
+          <img class="resort-img imgs" src="sauna.svg" alt="Sauna place" />
+          <div class="resort-texts1">
+            <p class="bold">Sauna station</p>
+          </div>
+        </div>
+        <div class="resort-contents">
+          <img
+            class="resort-img imgs"
+            src="exercise-station.svg"
+            alt="Exercise station"
+          />
+          <div class="resort-texts1">
+            <p class="bold">Exercise station</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Packages section -->
+    <section class="section" id="packages">
+      <div class="margin-pack">
+        <h2 class="header-resort">Packages & Offers</h2>
+      </div>
+      <div class="contents">
+        <div class="cont-pack-align">
+          <img class="resort-img" src="sushi.svg" alt="Spa room" />
+          <div class="resort-texts">
+            <h3 class="text1">The RELAX and CHILL Package</h3>
+            <p class="txt">
+              This package includes the quintessential welcome amenity, a sunny
+              start to each day, lovely view, boat tour, and a little pampering
+              too. Welcome to paradise!
+            </p>
+            <a class="learn" href="/">LEARN MORE</a>
+          </div>
+        </div>
+        <div class="cont-pack-align">
+          <img class="resort-img" src="giftCard.svg" alt="Sauna place" />
+          <div class="resort-texts">
+            <h3 class="text1">Gift Cards Now Available</h3>
+            <p class="txt">
+              Give the gift of an escape like no other. Gift cards to The Okeke
+              Island Resort & Spa, SpaTerre and The Dining Room are now
+              available for purchase.
+            </p>
+            <a class="learn" href="/">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="carousel">
+      <h4 class="testimonial__header">A few testimonials</h4>
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <p class="testimonial-names">Danny & Bren</p>
+            <blockquote class="testimonial__text">
+              An unbelievable experience, We will be back for sure, we love the
+              island.
+            </blockquote>
+            <address class="testimonial__author">
+              <p class="testimonial__location">Texas, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <p class="testimonial-names">Jide & Pao</p>
+            <blockquote class="testimonial__text">
+              Wanted you to know how happy we were with our stay there this
+              week. Our wedding was perfect! We'll be back next year for our
+              anniversary. Again, thanks for everything. It was perfect!
+            </blockquote>
+            <address class="testimonial__author">
+              <p class="testimonial__location">Amsterdam, Belgium</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <p class="testimonial-names">Christopher</p>
+            <blockquote class="testimonial__text">
+              Best place for honeymoon! Me and my lovely wife stayed in this
+              hotel for 2 night and really get everything that we wanted.
+              Everything was fabulous, attention to details from the staff 100%.
+            </blockquote>
+            <address class="testimonial__author">
+              <p class="testimonial__location">Monterrey, Mexico</p>
+            </address>
+          </div>
+        </div>
+        <button class="slider__btn slider__btn--left">&#9664;</button>
+        <button class="slider__btn slider__btn--right">&#9654;</button>
+      </div>
+    </section>
+    <footer id="footer">
+      <div id="footerList">
+        <ul>
+          <li class="footer-items"><a href="#home-paper">HOME</a></li>
+          <li class="footer-items"><a href="#our-resort">RESORT</a></li>
+          <li class="footer-items"><a href="#dining-sec">DINING</a></li>
+          <li class="footer-items"><a href="#spa-fitness">SPA</a></li>
+          <li class="footer-items"><a href="#carousel">TESTIMONIALS</a></li>
+        </ul>
+      </div>
+      <div id="footerList">
+        <ul>
+          <li><h5>OKEKE PALM ISLAND</h5></li>
+          <li>
+            <p>
+              3600 Canon line Dr Waterside C1B 0S8 The Okeke Palm Island
+              <br />
+              dylanokeks@yahoo.com
+              <br />
+              THE OKEKE PALM ISLAND http//theokekepalmisland.com
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="footerEnd">
+        <h5>Latest from Okehotels</h5>
+        <p class="info-text">
+          Be the first to know about exciting new discounts, events and many
+          more.
+        </p>
+        <form method="POST" action enctype="multipart/form-data">
+          <label for="input-text"></label>
+          <input
+            type="text"
+            id="input-text"
+            placeholder="Enter your Email"
+            class="input-text"
+          /><br />
+          <a href="#" class="footerBtn">Sign Up</a>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
