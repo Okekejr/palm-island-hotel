@@ -2,7 +2,11 @@
 
 Hotel website project make with HTML, CSS and javacsript, showing modern concepts and modern javascript use cases.
 
-## Demo
+## Demo & Design by me
+
+```
+https://www.behance.net/gallery/132260385/OkeResort-Landing-page-Website
+```
 
 ![](okhotel.gif)
 
